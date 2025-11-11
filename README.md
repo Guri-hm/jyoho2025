@@ -1,20 +1,27 @@
-# 8puzzle — GitHub Pages deployment
+# jyoho2025 — 授業で収集したデータ公開用リポジトリ
 
-This repository contains a small static 8-puzzle site. The repository is configured to automatically deploy to GitHub Pages on pushes to the `main` branch.
+このリポジトリは授業で生徒から収集したデータ（集計・可視化・教材用サンプル等）を公開するために作成されたものです。
 
-What was added
-- `.github/workflows/deploy-pages.yml` — GitHub Actions workflow that uploads the repo root as a Pages artifact and deploys it on push to `main`.
-- `.nojekyll` — prevents GitHub Pages from processing files with Jekyll.
+重要な注意点
+- 本リポジトリにアップロードされるデータは、個人情報保護の観点から適切に匿名化・加工された上で公開してください。
+- 学生の個人を特定できる情報（氏名、学籍番号、メールアドレス等）は絶対に含めないでください。
+- 公開にあたっては担当教員・所属機関の指示および適用される規約に従ってください。
 
-How it works
-1. Push to `main`.
-2. The workflow runs and uploads the repository root as the Pages artifact.
-3. GitHub deploys the artifact to GitHub Pages. The Pages deployment is created automatically by the workflow.
+自動デプロイの仕組み
+- `.github/workflows/deploy-pages.yml` により、`main` ブランチへの push をトリガーとして GitHub Pages にデプロイされます。
+- `.nojekyll` をルートに置いているため、Jekyll による処理は行われません。
 
-Verify
-- After pushing, open the Actions tab on GitHub and inspect the `Deploy to GitHub Pages` run.
-- When the deployment finishes, the Pages URL will be available in the repository Settings → Pages page, or in the Actions run summary.
+運用上の確認手順
+1. データを公開する前に、必ずデータが匿名化されていることを確認してください。
+2. `main` に push すると Actions が実行されます。Actions タブでジョブの実行ログ（Upload／Deploy）を確認してください。
+3. デプロイ完了後、Settings → Pages または Actions の実行結果から公開 URL を確認できます。
 
-Notes
-- If you later add a build step (for example a bundler or static site generator), update `deploy-pages.yml` to run the build and upload the build output directory instead of the repository root.
-- To use a custom domain, add a `CNAME` file to the repository root with your domain and configure DNS accordingly.
+付記
+- 将来的にビルドが必要な場合（静的サイトジェネレータやバンドル等）には、`deploy-pages.yml` を修正してビルド出力ディレクトリをアップロードするようにしてください。
+- カスタムドメインを使う場合はリポジトリルートに `CNAME` を置き、DNS の設定を行ってください。
+
+ライセンスと公開ポリシー
+- データの取り扱い・再利用に関する方針（ライセンスや利用条件）があれば、別ファイル（LICENSE、CONTRIBUTING、DATA_POLICY 等）で明確にしてください。
+
+お問い合わせ
+- 公開に関する質問や問題は担当教員まで連絡してください。
