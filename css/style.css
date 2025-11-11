@@ -1,135 +1,92 @@
+:root{
+    --bg: #f4f7fb;
+    --card-bg: linear-gradient(180deg,#ffffff,#fbfdff);
+    --muted: #6b7280;
+    --accent: #3b82f6;
+}
+
+/* Page layout */
 body {
-    display: flex;
-    justify-content: center;
+    background: var(--bg);
+    color: #0b1220;
+    font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 28px 12px;
 }
 
-h1 {
-    font-size: 1.25rem;
-    text-align: center;
+main {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-h2 {
-    font-size: 1rem;
-    text-align: center;
-}
+h1 { font-size: 1.25rem; text-align: center; margin: 0 0 8px 0; }
+h2 { font-size: 1rem; text-align: center; margin: 0 0 6px 0; }
 
+/* Game boards */
 .boards {
     position: relative;
     display: flex;
     gap: 24px;
 }
-.board {
-    display: flex;
-    flex-direction: column;
-}
-
-.board .row  {
-    display: flex;
-}
+.board { display: flex; flex-direction: column; }
+.board .row { display: flex; }
 .tile {
     border: 1px solid #333;
     width: 100px;
     height: 100px;
     position: relative;
+    background: #fff;
 }
-.tile img {
-    width: 100%;
-    height: 100%;
-}
+.tile img { width: 100%; height: 100%; display: block; }
 .tile-number {
-    position: absolute;
-    top: 6px;
-    left: 6px;
-    width: 20px;
-    height: 20px;
-    background: lightskyblue;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    line-height: 1;
-    z-index: 2;
-    pointer-events: none;
+    position: absolute; top: 6px; left: 6px; width: 20px; height: 20px;
+    background: lightskyblue; border-radius: 50%; display: flex; align-items: center;
+    justify-content: center; font-size: 10px; line-height: 1; z-index: 2; pointer-events: none;
 }
+.player .tile:empty { background: #000; }
+.blurred { filter: blur(25px); opacity: 0.4; pointer-events: none; user-select: none; }
 
-/* 改行あるとemptyが効かない */
-.player .tile:empty {
-    background: #000;
-}
+.controls { display: flex; justify-content: center; gap: 8px; margin-top: 12px; }
 
-.blurred { 
-    filter: blur(25px);
-    opacity: 0.4;
-    pointer-events: none; 
-    user-select: none; 
-}
-
-.controls {
+/* Submissions UI - modern card/grid */
+.submissions-container{
     display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-top: 12px;
-}
-
-/* ヒント機能のときに追加 */
-.hint-arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 36px;
-    color: orange;
-    z-index: 3;
-    pointer-events: none;
-}
-.submissions-container {
-.submissions-container {
-    display: flex;
-    gap: 24px;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 18px;
+    margin: 18px 0 28px;
 }
-.class-block {
-    flex: 1 1 260px;
+.class-block{
+    flex: 1 1 300px;
     min-width: 220px;
     max-width: 360px;
-    background: #fafafa;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 12px;
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 14px;
+    border: 1px solid rgba(15,23,42,0.06);
+    box-shadow: 0 6px 18px rgba(15,23,42,0.06);
 }
-.class-block h3 {
-    margin-top: 0;
-    text-align: center;
+.class-block h3{ margin: 0 0 8px 0; font-size: 1.05rem; text-align: center; color: #0f172a; }
+.student-grid{ display: grid; grid-template-columns: repeat(8, 1fr); gap: 8px; margin-top: 10px; }
+.student-link{
+    display: flex; align-items: center; justify-content: center; padding: 8px 6px;
+    border-radius: 8px; text-decoration: none; color: #07203a; background: #fff;
+    border: 1px solid rgba(15,23,42,0.06); font-weight: 600;
+    transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+    box-shadow: 0 2px 6px rgba(2,6,23,0.04);
 }
-.student-grid {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 6px;
-    margin-top: 8px;
+.student-link:hover{
+    transform: translateY(-6px);
+    background: linear-gradient(180deg,#eef7ff,#e6f2ff);
+    border-color: rgba(59,130,246,0.22);
+    box-shadow: 0 10px 24px rgba(59,130,246,0.09);
 }
-.student-link {
-    display: inline-block;
-    padding: 6px 4px;
-    border-radius: 4px;
-    text-align: center;
-    text-decoration: none;
-    color: #111;
-    background: #fff;
-    border: 1px solid #e0e0e0;
-    font-size: 0.85rem;
-}
-.student-link:hover {
-    background: #eef6ff;
-    border-color: #9fc5ff;
-}
-.student-link:active {
-    transform: translateY(1px);
-}
+.student-link:active{ transform: translateY(-2px); }
 
-@media (max-width: 700px) {
-    .student-grid {
-        grid-template-columns: repeat(5, 1fr);
-    }
-}
+@media (max-width: 1000px){ .student-grid{ grid-template-columns: repeat(6,1fr); } }
+@media (max-width: 720px){ .student-grid{ grid-template-columns: repeat(4,1fr); } }
+@media (max-width: 420px){ .student-grid{ grid-template-columns: repeat(3,1fr); } .class-block{ padding:10px } }
+
+/* small utilities */
+.error{ color: var(--muted); background: #fff; padding: 10px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.04); }
