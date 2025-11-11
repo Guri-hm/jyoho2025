@@ -82,3 +82,54 @@ h2 {
     z-index: 3;
     pointer-events: none;
 }
+.submissions-container {
+.submissions-container {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+.class-block {
+    flex: 1 1 260px;
+    min-width: 220px;
+    max-width: 360px;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px;
+}
+.class-block h3 {
+    margin-top: 0;
+    text-align: center;
+}
+.student-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 6px;
+    margin-top: 8px;
+}
+.student-link {
+    display: inline-block;
+    padding: 6px 4px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    color: #111;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    font-size: 0.85rem;
+}
+.student-link:hover {
+    background: #eef6ff;
+    border-color: #9fc5ff;
+}
+.student-link:active {
+    transform: translateY(1px);
+}
+
+@media (max-width: 700px) {
+    .student-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
