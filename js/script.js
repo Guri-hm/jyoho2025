@@ -2,6 +2,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('submissions-root');
   if (!root) return;
 
+  // If the page is opened via file://, fetch() will almost always fail.
+  // Show a friendly instruction so the user knows to run a local server or use GitHub Pages.
+  if (location.protocol === 'file:') {
+    root.innerHTML = `
+      <div class="error">
+        名簿の読み込みに失敗しました（file:// プロトコルでは fetch がブロックされます）。<br>
+        ローカルで確認するには、プロジェクトフォルダでローカル HTTP サーバを起動して
+        <a href="http://localhost:8000" target="_blank" rel="noopener">http://localhost:8000</a> で開いてください。<br>
+        例（cmd.exe / PowerShell）:
+        <pre>python -m http.server 8000</pre>
+      </div>
+    `;
+    return;
+  }
+
   // Try to fetch roster.json first (recommended). If that fails, fall back to roster.md for compatibility.
   function renderFromIds(ids) {
     if (!Array.isArray(ids) || ids.length === 0) {
