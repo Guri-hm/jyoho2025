@@ -1,0 +1,15 @@
+img{
+                width: 600px;
+            }
+            main{
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 20px;
+                padding-right: 20px;
+                border-radius: 2%;
+                background-color: #a9a9a9;
+            }
+            body{
+                background-color: #dcdcdc;
+            }

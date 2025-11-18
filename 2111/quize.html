@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>
+            <h1>サメのクイズ</h1>
+            <h2>問１　世界最大のサメはジンベエザメですが、二番目は何でしょう</h2>
+            <ol>
+                <li>ホホジロザメ</li>
+                <li>イタチザメ</li>
+                <li>ウバザメ</li>
+                <li>メガマウス</li>
+            </ol>
+            <p id="a1">答：ウバザメ</p>
+            <button id="btn1">答え表示</button>
+            <h3>問２　平均寿命が400年前後とされる長寿のサメで、2017年にサメの中で
+            最高齢の512歳の個体が発見されたサメの種類は何？</h3>
+            <ol>
+                <li>カグラザメ</li>
+                <li>ニシオンデンザメ</li>
+                <li>メガマウス</li>
+                <li>オオテンジクザメ</li>
+            </ol>
+            <p id="a2">答：ニシオンデンザメ</p>
+            <button id="btn2">答え表示</button>
+            <h4>問３　多くのサメが持つ、餌の発する微弱な電流を感知するための頭部にある器官のことを、
+            これを発見した科学者の名前からなんというでしょう。</h4>
+            <ol>
+                <li>ウェーバー器官</li>
+                <li>ロレンチーニ器官</li>
+                <li>ピット器官</li>
+                <li>トーマス器官</li>
+            </ol>
+            <p id="a3">答：ロレンチーニ器官</p>
+            <button id="btn3">答え表示</button>
+
+        </main>
+        <script>
+            let a1 =document.getElementById("a1");
+            a1.style.display ="none"
+            let btn1 =document.getElementById("btn1");
+            btn1.addEventListener("click",()=>{
+                a1.style.display ="block";
+            })
+        </script>
+        <script>
+            let a2 =document.getElementById("a2");
+            a2.style.display ="none"
+            let btn2 =document.getElementById("btn2");
+            btn2.addEventListener("click",()=>{
+                a2.style.display ="block";
+            })
+         </script>
+         <script>
+            let a3 =document.getElementById("a3");
+            a3.style.display ="none"
+            let btn3 =document.getElementById("btn3");
+            btn3.addEventListener("click",()=>{
+                a3.style.display ="block";
+            })
+         </script>
+    </body>
+</html>

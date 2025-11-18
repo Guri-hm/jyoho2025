@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>クイズのページ </title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>
+    <h1>シマエナガのクイズ</h1>
+    <h2>Ｑ１．シマエナガが天敵から身を守るために巣に入れるものは？</h2>
+    <ol>
+    <li>氷の塊</li>
+    <li>ヘビの抜け殻</li>
+    <li>カラスの羽根</li>
+    <li>松の葉</li>
+    </ol>
+    <p id="a1">A.カラスの羽根</p>
+    <button id="btn1">答え</button>
+    <h2>Ｑ２．シマエナガの「シマ」の由来は？</h2>
+    <ol>
+    <li>志摩</li>
+    <li>島</li>
+    <li>霜</li>
+    <li>縞</li>
+    </ol>
+    <p id="a2">A.島</p>
+    <button id="btn2">答え</button>
+    <h2>Ｑ３.「エナガ」の由来は？</h2>
+    <ol>
+    <li>地名</li>
+    <li>小さな体</li>
+    <li>長い尾</li>
+    <li>エネルギッシュな動き</li>
+    </ol>
+    <p id="a3">A.長い尾
+    </p>
+    <button id="btn3">答え</button>
+        </main>
+        <script>
+            let a1 = document.getElementById("a1");
+            a1.style.display = "none";
+            let btn1 = document.getElementById("btn1");
+            btn1.addEventListener("click",()=>{
+                a1.style.display = "block";
+            })
+            alert("");
+        </script>
+        <script>
+            let a2 = document.getElementById("a2");
+            a2.style.display = "none";
+            let btn2 = document.getElementById("btn2");
+            btn2.addEventListener("click",()=>{
+                a2.style.display = "block";
+            })
+        </script>
+        <script>
+            let a3 = document.getElementById("a3");
+            a3.style.display = "none";
+            let btn3 = document.getElementById("btn3");
+            btn3.addEventListener("click",()=>{
+                a3.style.display = "block";
+            })
+        </script>
+    </body>
+</html>

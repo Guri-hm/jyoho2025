@@ -1,0 +1,13 @@
+ img{
+width: 300px;
+            }
+            main{
+                background-color: #ccffff;
+                padding-left: 20px;
+                padding-right:20px ;
+                border-radius: 2%;
+            }
+            body{
+                background-color: #45e6e6;
+                border-radius: 4%;
+            }

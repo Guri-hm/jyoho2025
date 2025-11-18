@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>クイズのページ </title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>
+            <h1>スヌーピーのクイズ</h1>
+            <h2>問１：スヌーピーの誕生日は？</h2>
+            <ol>
+                <li>11月22日</li>
+                <li>8月10日</li>
+                <li>2月14日</li>
+                <li>5月25日</li>
+            </ol>
+            <p id="a1">答：8月10日</p>
+            <button id="btn1">答え表示</button>
+        
+        <script>
+            let a1 = document.getElementById("a1");
+            a1.style.display = "none";
+            let btn1 = document.getElementById("btn1");
+            btn1.addEventListener("click",()=>{
+                a1.style.display = "block";
+            })
+        </script>
+        <h2>問２：スヌーピーの兄弟は何人いるでしょう？</h2>
+        <ol>
+            <li>５匹</li>
+            <li>６匹</li>
+            <li>７匹</li>
+            <li>８匹</li>
+        </ol>
+        <p id="a2">答：８匹</p>
+        <button id="btn2">答え表示</button>
+        <script>
+            let a2 = document.getElementById("a2");
+            a2.style.display = "none";
+            let btn2 = document.getElementById("btn2");
+            btn2.addEventListener("click",()=>{
+                a2.style.display = "block";
+            })
+        </script>
+        <h2>問３：スヌーピーの最初の飼い主は？</h2>
+        <ol>
+            <li>ライラ</li>
+            <li>チャーリーブラウン</li>
+            <li>チャールズ・シュルツ</li>
+            <li>リリィ</li>        
+        </ol>
+        <p id="a3">答：ライラ</p>
+        <button id="btn3">答え表示</button>
+        <script>
+            let a3 = document.getElementById("a3");
+            a3.style.display = "none";
+            let btn3 = document.getElementById("btn3");
+            btn3.addEventListener("click",()=>{
+                a3.style.display = "block";
+            })
+        </script>
+        
+
+
+        </main>
+    </body>
+</html>

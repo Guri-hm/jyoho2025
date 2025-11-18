@@ -1,0 +1,17 @@
+img{
+                width: 300px;
+            }
+            main{
+                width: 50%;
+                margin-left:auto;
+                margin-right:auto;
+                padding-left: 30px;
+                padding-right:20px;
+                padding-top:25px;
+                padding-bottom:25px;
+                border-radius:6%;
+                background-color: #b0c4de;
+            }
+            body{
+                background-color: #8aade6;
+            }
