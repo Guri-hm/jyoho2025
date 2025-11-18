@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+    </head>
+    <body>
+        <main>
+            <h1>マンゴーのクイズ</h1>
+            <h2>問１ マンゴーの有名な都道府県は？ </h2>
+            <ol>
+                <li>愛知県</li>
+                <li>北海道</li>
+                <li>東京都</li>
+                <li>宮崎県</li>
+            </ol>
+            <p id="a1">答え 宮崎県</p>
+            <button id="btn1">答え表示</button>
+           
+        
+        <script>
+            let a1 = document.getElementById("a1")
+            a1.style.display = "none"
+            let btn1 = document.getElementById("btn1")
+            btn1.addEventListener("click",()=>{
+                a1.style.display = "block";
+            })
+           
+            
+        </script>
+         <h3>問２ マンゴーには種がある？</h3>
+            <ol>
+                <li>ある</li>
+                <li>ない</li>
+            </ol>
+            <p id="a2">答え ある</p>
+            <button id="btn2">答え表示</button>
+            <script>
+ let a2 = document.getElementById("a2")
+            a2.style.display = "none"
+            let btn2 = document.getElementById("btn2")
+            btn2.addEventListener("click",()=>{
+                a2.style.display = "block";
+            })
+            </script>
+            </main>
+
+    </body>
+</html>
