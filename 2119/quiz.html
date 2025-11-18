@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>
+            <h1>ソフトクリームのクイズ</h1>
+            <h2>問１．ソフトクリームの日はいつ</h2>
+            <ol>
+                <li>6/30</li>
+                <li>3/24</li>
+                <li>8/12</li>
+                <li>7/3</li>
+            </ol>
+            <p id="a1">答え：7/3</p>
+            <button id="btn1">答え表示</button>
+            <h2>ソフトクリームの正式名称は</h2>
+            <ol>
+                <li>ソフトバンクアイスクリーム</li>
+                <li>ソフトサーブアイスクリーム</li>
+                <li>ソフトサービスアイスクリーム</li>
+                <li>ソフトウェアアイスクリーム</li>
+            </ol>
+            <p id="a2">答え：ソフトサーブアイスクリーム</p>
+            <button id="btn2">答え表示</button>
+        </main>
+        <script> 
+            let a1=document.getElementById("a1");
+            a1.style.display="none";
+            let btn1=document.getElementById("btn1")
+            btn1.addEventListener("click",()=>{
+            a1.style.display="block"
+            })
+            let a2=document.getElementById("a2");
+            a2.style.display="none";
+            let btn2=document.getElementById("btn2")
+            btn2.addEventListener("click",()=>{
+            a2.style.display="block"
+            })
+    
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>
+            <h1>モンストのクイズ</h1>
+            <h2>問1.モンストのサービス開始日</h2>
+            <ol>
+                <li>2016年12月25日</li>
+                <li>2015年12月15日</li>
+                <li>2014年10月31日</li>
+                <li>2013年10月10日</li>
+            </ol>
+            <p id="a1">答:4.2013年10月10日</p>
+            <button id="btn1">答え表示</button>
+            <h2>問2.モンストは10年以上やっているでしょうか？ </h2>
+            <ol>
+                <li>やっている</li>
+                <li>やっていない</li>
+            </ol>
+            <p id="a2">答:1.やっている</p>
+            <button id="btn2">答え表示</button>
+        </main>
+        <script>
+            let a1=document.getElementById("a1")
+            a1.style.display="none";
+            let btn1 =document.getElementById("btn1");
+            btn1.addEventListener("click",()=>{
+            a1.style.display ="block";
+            })
+            let a2=document.getElementById("a2")
+            a2.style.display="none";
+            let btn2 =document.getElementById("btn2");
+            btn2.addEventListener("click",()=>{
+            a2.style.display ="block";
+            })
+
+            
+        </script>
+    </body>
+</html>
