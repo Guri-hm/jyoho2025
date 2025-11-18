@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>
+            <h1>メンチカツのクイズ</h1>
+            <h2>問１．メンチカツ発祥の地は？</h2>
+            <ol>
+                <li>東京</li>
+                <li>大阪</li>
+                <li>神戸</li>
+                <li>広島</li>
+            </ol>
+            <p id="a1">答：東京</p>
+            <button id="btn1">答え表示</button>
+            <h3>問2.メンチカツの語源は？</h3>
+            <ol>
+                <li>作り方から</li>
+                <li>材料から</li>
+                <li>聞き間違い</li>
+                <li>作った人の名前</li>
+            </ol>
+            <p id="a2">答：聞き間違い</p>
+            <button id="btn2">答え表示</button>
+        </main>
+        <script>
+            let a1 = document.getElementById("a1");
+            a1.style.display = "none";
+            let btn1 = document.getElementById("btn1");
+            btn1.addEventListener("click",()=>{
+                a1.style.display = "block";
+            })
+
+             let a2 = document.getElementById("a2");
+            a2.style.display = "none";
+            let btn2 = document.getElementById("btn2");
+            btn2.addEventListener("click",()=>{
+                a2.style.display = "block";
+            })
+        </script>
+        
+    </body>
+</html>

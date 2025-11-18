@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>
+            <h1>シャインマスカット(中国産)のクイズ</h1>
+            <h2>問１.シャインマスカットの原産地は？</h2>
+            <ol>
+                <li>中国　山東省</li>
+                <li>日本　広島県</li>
+                <li>アメリカ　アリゾナ州</li>
+                <li>イタリア　シチリア</li>
+            </ol>
+            <p id="a1">答え：日本　広島県</p>
+            <button id="btn1">答え表示</button>
+            <h3>問２.中国産シャインマスカットの問題とは？</h3>
+            <ol>
+                <li>中国産だと海外への輸送途中で品質が落ちてしまう </li>
+                <li>中国産だとシャインマスカットの価格が落ちてしまう</li>
+                <li>中国ではシャインマスカットを作ることが難しく、価格が高騰する</li>
+                <li>習近平国家主席が全部食べちゃう</li>
+            </ol>
+            <p id="a2">答え：中国産だとシャインマスカットの価格が落ちてしまう</p>
+            <button id="btn2">答え表示</button>
+            <h4>問３.ある一国の優良な植物品種が海外に流入しないように実際に行われている対策の一つは？</h4>
+            <ol>
+                <li>原産国の認知の推進</li>
+                <li>植物品種の栽培ライセンスの販売</li>
+                <li>原産国での法の規制の強化</li>
+                <li>品種の大規模な厳重管理</li>
+            </ol>
+            <p id="a3">答え：原産国での法の規制の強化</p>
+            <button id="btn3">答え表示</button>
+        </main>
+        <script>
+            let a1 = document.getElementById("a1");
+            a1.style.display = "none";
+            let btn1 = document.getElementById("btn1");
+            btn1.addEventListener("click",()=>{
+                a1.style.display = "block";
+            })
+        </script>
+         <script>
+            let a2 = document.getElementById("a2");
+            a2.style.display = "none";
+            let btn2 = document.getElementById("btn2");
+            btn2.addEventListener("click",()=>{
+                a2.style.display = "block";
+            })
+        </script>
+         <script>
+            let a3 = document.getElementById("a3");
+            a3.style.display = "none";
+            let btn3 = document.getElementById("btn3");
+            btn3.addEventListener("click",()=>{
+                a3.style.display = "block";
+            })
+        </script>
+ 
+        
+    </body>
+</html>

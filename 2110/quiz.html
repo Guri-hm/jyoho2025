@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <h1>パスタのクイズ</h1>
+            <h2>問１、ナポリタン発祥の地は?</h2>
+            <ol>
+                <li>アメリカ</li>
+                <li>イタリア</li>
+                <li>オーストリア</li>
+                <li>日本</li>
+            </ol>
+            <p id="a1">答、日本</p>
+            <button id="btn1">答え表示</button>
+        </main>
+        <script>
+            let a1=document.getElementById("a1")
+            a1.style.display = "none";
+            let btn1 = document.getElementById("btn1")
+            btn1.addEventListener("click",()=>{
+                a1.style.display = "block"
+             })
+        </script>
+         <main>
+            <h1>パスタのクイズ</h1>
+            <h2>問２スパゲッティをたくさん生産している場所は?</h2>
+            <ol>
+                <li>ローマ</li>
+                <li>ナポリ</li>
+                <li>ミラノ</li>
+                <li>ペルーシャ</li>
+            </ol>
+            <p id="a2">答、ナポリ</p>
+            <button id="btn2">答え表示</button>
+        </main>
+        <script>
+            let a2=document.getElementById("a2")
+            a2.style.display = "none";
+            let btn2 = document.getElementById("btn2")
+            btn2.addEventListener("click",()=>{
+                a2.style.display = "block"
+             })
+        </script>
+    </body>
+</html>

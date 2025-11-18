@@ -1,0 +1,69 @@
+<html>
+    <head>
+       <title>クイズのページ</title> 
+       <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>
+            <h1>睡眠のクイズ</h1>
+            <h2>問１・睡眠の最適時間は何時間？</h2>
+            <ol>
+                <li>6時間</li>
+                <li>7時間</li>
+                <li>8時間</li>
+                <li>9時間</li>
+　　　　　</ol>
+　　　　　<p id="a1">答：７時間ぐらい</p>
+     <button id="btn1">答え表示</button>
+        </main>
+        <script>
+            let a1 = document.getElementById("a1")
+            a1.style.display = "none";
+            let btn1 = document.getElementById("btn1");
+            btn1.addEventListener("click",()=>{
+               a1.style.display ="block";
+            })
+    
+        </script>
+        <main>
+            <h1>クイズパート２</h1>
+            <h2>問２人間が寝ている間に失われる水分量　</h2>
+            <ol>
+                <li>10ml</li>
+                <li>100ml</li>
+                <li>500ml</li>
+            </ol>
+             <p id="a2">答：500ml</p>
+　　　　　　<button id="btn2">答え表示</button>
+        </main>
+        <script>
+            let a2 = document.getElementById("a2")
+            a2.style.display = "none";
+            let btn2 = document.getElementById("btn2");
+            btn2.addEventListener("click",()=>{
+               a2.style.display ="block";
+            })  
+
+        </script>
+        <main>
+            <h1>クイズパート3</h1>
+            <h2>休日の寝すぎはどんな影響があるのか　</h2>
+            <ol>
+                <li>逆効果</li>
+                <li>疲労回復になる</li>
+                <li>影響なし</li>
+            </ol>
+             <p id="a3">答：逆効果</p>
+　　　　　　<button id="btn3">答え表示</button>
+        </main>
+        <script>
+            let a3 = document.getElementById("a3")
+            a3.style.display = "none";
+            let btn3 = document.getElementById("btn3");
+            btn3.addEventListener("click",()=>{
+               a3.style.display ="block";
+            })  
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./style.css">
+
+    </head>
+    <body>
+        <main>
+            <h1>サッカーのクイズ</h1>
+            <h2>問1 試合の人数は？</h2>
+            <ol>
+                <li>9</li>
+                <li>10</li>
+                <li>11</li>
+                <li>12</li>
+            </ol>
+            <p id="a1">答:11</p>
+            <button id="btn1">答え表示</button>
+            <h3>問2　プロの試合時間は？</h3>
+            <ol>
+                <li>70分</li>
+                <li>80分</li>
+                <li>90分</li>
+                <li>100分</li>
+            </ol>
+            <p id="a2">答:90分</p>
+            <button id="b2">答え表示</button>
+            <h3>問3　2022年のカタールワールドカップ優勝国はどこ？</h3>
+            <ol>
+                <li>ブラジル</li>
+                <li>フランス</li>
+                <li>アルゼンチン</li>
+                <li>クロアチア</li>
+            </ol>
+            <p id="a3">答:アルゼンチン</p>
+            <button id="b3">答え表示</button>
+
+        
+            
+        </main>
+        <script>
+            let a1 = document.getElementById("a1");
+            a1.style.display ="none";
+            let btn1 = document.getElementById("btn1");
+            btn1.addEventListener("click",()=>{
+                a1.style.display ="block";
+            })
+            let a2 = document.getElementById("a2");
+            a2.style.display ="none";
+            let b2 = document.getElementById("b2");
+            b2.addEventListener("click",()=>{
+                a2.style.display ="block";
+            })
+            let a3 = document.getElementById("a3");
+            a3.style.display ="none";
+            let b3 = document.getElementById("b3");
+            b3.addEventListener("click",()=>{
+                a3.style.display ="block";
+            })
+            
+        </script>
+    </body>
+
+</html>
