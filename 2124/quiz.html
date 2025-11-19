@@ -1,0 +1,48 @@
+<html>
+        <head>
+           <title>クイズのページ</title>
+           <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+            <main>
+                <h1>otaのクイズ１もんめ</h1>
+                <h2>問1、otaの育ちの場所は？</h2>
+                <ol>
+                    <li>新城</li>
+                    <li>西浦</li>
+                    <li>音羽</li>
+                    <li>豊橋</li>
+                </ol>
+                <p id="al">答、西浦</p>
+                <button id="btnl">答え表示</button>
+            </main>
+            <script>
+                let al=document.getElementById("al")
+                al.style.display = "none";
+                let btnl = document.getElementById("btnl")
+                btnl.addEventListener("click",()=>{
+                    al.style.display = "block";
+                })
+            </script>
+            <main>
+                <h1>otaのクイズ２もんめ</h1>
+                <h2>問2、otaの部活は？</h2>
+                <ol>
+                    <li>テニス部と茶道部</li>
+                    <li>野球部</li>
+                    <li>サッカー部</li>
+                    <li>帰宅部</li>
+                </ol>
+                <p id="a2">答、テニス部</p>
+                <button id="btn2">答え表示</button>
+            </main>
+            <script>
+                let a2=document.getElementById("a2")
+                a2.style.display = "none";
+                let btn2 = document.getElementById("btn2")
+                btn2.addEventListener("click",()=>{
+                    a2.style.display = "block";
+                })
+            </script>
+        </body>
+</html>

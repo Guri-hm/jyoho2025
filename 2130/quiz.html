@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>
+            <h1>水泳のクイズ</h1>
+            <h2>問１．ブレストとはどの泳ぎ方を指してるでしょう？</h2>
+            <ol>
+                <li>クロール</li>
+                <li>背泳ぎ</li>
+                <li>平泳ぎ</li>
+                <li>バタフライ</li>
+            </ol>
+            <p id="a1">答：平泳ぎ</p>
+            <button id="btn1">答え表示</button>
+            <h3>問２．個人メドレーで二番目に来る泳法は？</h3>
+            <ol>
+                <li>バタフライ</li>
+                <li>クロール</li>
+                <li>背泳ぎ</li>
+                <li>平泳ぎ</li>
+            </ol>
+            <p id="a2">答：背泳ぎ</p>
+            <button id="btn2">答え表示</button>
+            <h4>問３．男子50メートル自由形の世界記録はどれでしょう？</h4>
+            <ol>
+                <li>20秒30</li>
+                <li>21秒12</li>
+                <li>20秒15</li>
+                <li>19秒90</li>
+            </ol>
+            <p id="a3">答：19秒90</p>
+            <button id="btn3">答え表示</button>
+        </main>
+        <script>
+        let a1 = document.getElementById("a1");
+        a1.style.display = "none";
+        let btn1 = document.getElementById("btn1");
+        btn1.addEventListener("click",()=>{
+            a1.style.display = "block";
+        })
+        </script>
+        <script>
+        let a2 = document.getElementById("a2");
+        a2.style.display = "none";
+        let btn2 = document.getElementById("btn2");
+        btn2.addEventListener("click",()=>{
+            a2.style.display = "block";
+        })
+        </script>
+        <script>
+        let a3 = document.getElementById("a3");
+        a3.style.display = "none";
+        let btn3 = document.getElementById("btn3");
+        btn3.addEventListener("click",()=>{
+            a3.style.display = "block";
+        })
+        </script>
+        
+    </body>
+</html>
