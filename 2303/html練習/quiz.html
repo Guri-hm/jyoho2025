@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./site.css">
+    </head>
+    <body>
+       <main>
+           <h1>クイズ</h1>
+           <h2>第１問</h2>
+           <p>名古屋グランパスはいつ作られたか？</p>
+           <ol>
+               <li>2000年</li>
+               <li>1939年</li>
+               <li>1945年</li>
+               <li>1899年</li>
+           </ol>
+           <p id="a1">答：1939年
+              <img src="./photo1.jpg" alt="">
+           </p>
+           <button id="btn1">答え表示</button>
+
+           <h2>第二問</h2>
+           <p>豊田スタジアムの最寄り駅である名鉄名古屋の駅はどれ？</p>
+           <ol>
+               <li>豊田市駅</li>
+               <li>豊田駅</li>
+               <li>豊田スタジアム前駅</li>
+           </ol>
+           <p id="a2">答:豊田市駅</p>
+           <button id="btn2">答え表示</button>
+
+           <h3></h3>
+       </main> 
+
+    </body>
+    <script>
+        let a1 = document.getElementById("a1");
+        a1.style.display = "none";
+        let btn1 = document.getElementById("btn1")
+        btn1.addEventListener("click",()=>{
+            a1.style.display = "block";
+            a1.style.backgroundColor = "#FF0000";
+        })
+        </script>
+        <script>
+            let a2 =document.getElementById("a2");
+            a2.style.display = "none";
+            let btn2 = document.getElementById("btn2")
+            btn2.addEventListener("click",()=>{
+                a2.style.display = "block";
+                a2.style.backgroundColor = "#FF0000";
+            })
+        </script>
+            
+     
+</html>

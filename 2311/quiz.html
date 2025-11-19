@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./site.css">
+    </head>
+    <body>
+        <main>
+            <h1>クイズ</h1>
+            <h2>第1問</h2>
+            <p>ハンドボールはどの国で生まれた？</p>
+            <ol>
+                <li>アメリカ</li>
+                <li>スウェーデン</li>
+                <li>デンマーク</li>
+                <li>スペイン</li>
+            </ol>
+            <p id="a1">答:デンマーク</p>
+            <button id="btn1">答え表示</button>
+            <h3>第2問</h3>
+            <p>ハンドボール世界ランキング１位はどの国か？</p>
+            <ol>
+                <li>日本</li>
+                <li>ドイツ</li>
+                <li>デンマーク</li>
+                <li>フランス</li>
+            </ol>
+              <p id="a2">答:デンマーク</p>
+            <button id="btn2">答え表示</button>
+        </main> 
+    </body>
+    <script>
+        let a1 = document.getElementById("a1")
+    let btn1 = document.getElementById("btn1");
+    a1.style.display = "none"
+    btn1.addEventListener("click",()=>{
+        alert("本当に表示しますか？");
+        a1.style.display ="block"
+        a1.style.backgroundColor ="#FF0000";
+        })
+            let a2 = document.getElementById("a2")
+    let btn2 = document.getElementById("btn2");
+    a2.style.display = "none"
+    btn2.addEventListener("click",()=>{
+        alert("本当に表示しますか？");
+        a2.style.display ="block"
+        a2.style.backgroundColor ="#FF0000";
+        })
+    </script>
+</html

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロフィール</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="w-full h-screen flex">
+            <div class="m-auto bg-gray-800 w-full h-full flex gap-7 justify-center items-center flex-col relative">
+                <h1 class="text-4xl font-bold text-white">プロフィール</h1>
+                <a href="simple.html" class="text-blue-200 font-medium text-fg-brand hover:underline" target="_blank">
+                    シンプル版はこちら
+                    <svg class="w-3 h-3 inline" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 18 18">
+                        <path
+                            d="M17 0h-5.768a1 1 0 1 0 0 2h3.354L8.4 8.182A1.003 1.003 0 1 0 9.818 9.6L16 3.414v3.354a1 1 0 0 0 2 0V1a1 1 0 0 0-1-1Z">
+                        </path>
+                        <path
+                            d="m14.258 7.985-3.025 3.025A3 3 0 1 1 6.99 6.768l3.026-3.026A3.01 3.01 0 0 1 8.411 2H2.167A2.169 2.169 0 0 0 0 4.167v11.666A2.169 2.169 0 0 0 2.167 18h11.666A2.169 2.169 0 0 0 16 15.833V9.589a3.011 3.011 0 0 1-1.742-1.604Z">
+                        </path>
+                    </svg>
+                </a>
+                <span class="absolute text-white bottom-1 text-4xl animate-bounce">↓</span>
+            </div>
+        </div>
+        <!--好きなもの-->
+        <div class="bg-gray-100 py-5 border-b-2 border-gray-300">
+            <h2 class="text-3xl font-bold mb-4 text-center">好きなもの</h2>
+            <div class="m-auto w-full h-full flex items-center justify-evenly">
+                <div>
+                    <img src="photo1.png" alt="プログラミングをする人のイラスト" class="w-48 h-48 rounded-full mx-auto mb-4">
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4">パソコン</h2>
+                    <p class="text-lg">自分で何でも作れる</p>
+                    <p class="text-lg">わからないことをすぐ調べて学べる</p>
+                </div>
+            </div>
+        </div>
+        <!--関連してほしいもの-->
+        <div class="bg-gray-100 py-5 border-b-2 border-gray-300">
+            <h2 class="text-3xl font-bold mb-4 text-center">関連してほしいもの</h2>
+            <div class="m-auto w-full h-full flex items-center justify-evenly">
+                <div>
+                    <h2 class="text-2xl font-bold mb-4">M.2 SSD</h2>
+                    <p class="text-lg">残り容量5GB.....</p>
+                    <p class="text-lg">価格高騰するかも？</p>
+                </div>
+                <div class="mb-4">
+                    <img src="photo2.png" alt="M.2（エムドットツー）SSDのイラスト"
+                        class="w-48 object-cover h-48 rounded-full mx-auto">
+                </div>
+            </div>
+        </div>
+        <!--ゲーム-->
+        <div class="bg-gray-100 py-5 border-b-2 border-gray-300">
+            <h2 class="text-3xl font-bold mb-4 text-center">ゲーム</h2>
+            <div class="m-auto w-full h-full flex items-center justify-center gap-10">
+                <!--カード-->
+                <a href="quiz.html">
+                    <div
+                        class="group bg-white relative shadow-xl w-80 h-100 p-4 flex justify-center flex-col hover:shadow-sm transition duration-300">
+                        <div class="mb-4">
+                            <img src="photo3.png" alt="クイズゲームのイラスト"
+                                class="w-48 object-cover h-48 rounded-full mx-auto">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center px-4 pb-4s">
+                            <h2 class="text-2xl font-bold mb-4 text-center">クイズゲーム</h2>
+                            <p class="text-lg text-center">プログラミングで作成したクイズゲームです。</p>
+                        </div>
+                        <span class="absolute bottom-2 right-2 text-lg text-gray-600 group-hover:underline">移動する</span>
+                    </div>
+                </a>
+                <!--カード-->
+                <a onclick="moveToRandomProfile()" href="javascript:void(0);">
+                    <div
+                        class="group bg-white relative shadow-xl w-80 h-100 p-4 flex justify-center flex-col hover:shadow-sm transition duration-300">
+                        <div class="mb-4">
+                            <img src="photo4.png" alt="冒険する人のイラスト"
+                                class="w-48 object-cover h-48 rounded-full mx-auto">
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center px-4 pb-4s">
+                            <h2 class="text-2xl font-bold mb-4 text-center">冒険する</h2>
+                            <p class="text-lg text-center">ランダムな人のプロフィールに移動します</p>
+                        </div>
+                        <span class="absolute bottom-2 right-2 text-lg text-gray-600 group-hover:underline">移動する</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+    <!--<footer>
+        <div class="bg-gray-800 text-white text-center py-4">
+            &copy;
+        </div>
+    </footer>-->
+</body>
+<script>
+    let rosterData = [];
+    async function init() {
+        try {
+            const result = await fetch("/roster.json");
+            const roster = await result.json();
+            rosterData = roster;
+        } catch {
+            const result = await fetch("/roster.md");
+            const text = await result.text();
+            rosterData = text.split(/\r?\n/).map(l => l.trim()).filter(l => l && !l.startsWith('#'));
+        }
+    }
+    init();
+
+    function moveToRandomProfile() {
+        if (rosterData.length === 0) {
+            alert("名簿データが読み込まれていません。");
+            return;
+        }
+        const randomIndex = Math.floor(Math.random() * rosterData.length);
+        const selectedProfile = rosterData[randomIndex];
+        window.location.href = `/${selectedProfile}/sample.html`;
+    }
+</script>
+
+</html>

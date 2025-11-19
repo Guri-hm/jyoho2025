@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>
+            <h1>クイズ</h1>
+            <h2>第一問</h2>
+            <p>世界で最も売れたゲームは？</p>
+            <ol>
+                <li>MINECRAFT</li>
+                <li>STREET FIGHTER</li>
+                <li>FORTNITE</li>
+                <li>GTA</li>
+            </ol>
+            <p id="a1">答え：MINECRAFT</p>
+            <button id="btn1">答え表示</button>
+        </main>
+    </body>
+    <script>
+        let a1=document.getElementById("a1");
+        a1.style.display="none";
+        let btn1 =document.getElementById("btn1");
+        btn1.addEventListener("click",()=>{alert("hello");
+        a1.style.display="block"
+        a1.style.backgroundColor="#FF"
+        })
+    </script>
+  
+  <body>
+        <main>
+            <h1>クイズ</h1>
+            <h2>第ニ問</h2>
+            <p>日本最古のゲーム機は？</p>
+            <ol>
+                <li>ファミリーコンピュータ</li>
+                <li>テレビテニス</li>
+                <li>DS</li>
+                <li>ゲームボーイ</li>
+            </ol>
+            <p id="a2">答え：テレビテニス</p>
+            <button id="btn2">答え表示</button>
+        </main>
+    </body>
+    <script>
+        let a2=document.getElementById("a2");
+        a2.style.display="none";
+        let btn2 =document.getElementById("btn2");
+        btn2.addEventListener("click",()=>{alert("hello");
+        a2.style.display="block"
+        a2.style.backgroundColor="#FF"
+        })
+    </script>
+    <body>
+        <main>
+            <h1>クイズ</h1>
+            <h2>第三問</h2>
+            <p>DSは何の略？</p>
+            <ol>
+                <li>dinamic screen</li>
+                <li>デカい　すごい</li>
+                <li>dual screen</li>
+                <li>driver of softwear</li>
+            </ol>
+            <p id="a3">答え：dual screen</p>
+            <button id="btn3">答え表示</button>
+        </main>
+    </body>
+    <script>
+        let a3=document.getElementById("a3");
+        a3.style.display="none";
+        let btn3 =document.getElementById("btn3");
+        btn3.addEventListener("click",()=>{alert("hello");
+        a3.style.display="block"
+        a3.style.backgroundColor="#FF"
+        })
+    </script>
+</html>

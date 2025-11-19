@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./site.css">
+    </head>
+    <body>
+      <main>
+        <h1>クイズ</h1>
+        <h2>第1問</h2>
+        <p>2024~25年SVリーグの優勝チームは？</p>
+        <ol>
+            <li>大阪ブルテオン </li>
+            <li>ウルフドッグス名古屋</li>
+            <li>サントリーサンバーズ大阪</li>
+            <li>ジェイテクトSTINGS愛知</li>
+        </ol>
+        <p id="a1">答：3.サントリーサンバーズ大阪</p>
+        <button id="btn1">答え表示</button>
+
+        <h2>第2問</h2>
+        <p>このシーズンでのMVP選手は？</p>
+        <ol>
+            <li>関田誠大</li>
+            <li>高橋藍</li>
+            <li>西田有志</li>
+            <li>小川智大</li>
+        </ol>
+        <p id="a2">答：2.高橋藍
+            <img src="./photo3.webp" alt="高橋藍">
+        </p>
+        <button id="btn2">答え表示</button>
+
+        <h2>第3問</h2>
+        <p>2024年に高校3冠を達成した高校は？</p>
+        <ol>
+            <li>駿台学園</li>
+            <li>鎮西高校</li>
+            <li>星城高校</li>
+            <li>東福岡高校</li>
+        </ol>
+        <p id="a3">答：1.駿台学園</p>
+        <button id="btn3">答え表示</button>
+
+      </main>  
+    </body>
+    <script>
+        let a1 = document.getElementById("a1");
+        a1.style.display = "none";
+        let btn1 = document.getElementById("btn1");
+        btn1.addEventListener("click",()=>{
+            a1.style.display = "block";
+        })
+    </script>
+    <script>
+        let a2 = document.getElementById("a2");
+        a2.style.display = "none";
+        let btn2 = document.getElementById("btn2");
+        btn2.addEventListener("click",()=>{
+            a2.style.display = "block";
+        })
+    </script>
+    <script>
+        let a3 = document.getElementById("a3");
+        a3.style.display = "none";
+        let btn3 = document.getElementById("btn3");
+        btn3.addEventListener("click",()=>{
+            a3.style.display = "block";
+        })
+    </script>
+</html>

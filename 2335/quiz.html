@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./site.css">
+
+        </head>
+
+    </body>
+    <main>
+        <h1>クイズ</h1>
+        <h2>第一問</h2>
+        <p>犬種はなんでしょう</p>
+        <ol>
+            <li>シュナウザー</li>
+            <li>テリア</li>
+            <li>ダックスフンド</li>
+        </ol>
+
+        <p id="a1">答：テリア</p>
+        <button id="btn1">答え表示</button>
+        <img src="./teria.jpg" alt="写真">
+    
+
+    </main>
+</body>
+<script>
+    let a1 = document.getElementById("a1");
+    a1.style.display = "none"; 
+    let btn1 = document.getElementById("btn1");
+    btn1.addEventListener("click" ,()=>{
+        a1.style.display = "block";
+    })
+    </script>
+</html>
+
+
+
+
+
+  </body>
+    <main>
+        <h1>クイズ</h1>
+        <h2>第二問</h2>
+        <p>テリアはどこの国発祥でしょう</p>
+        <ol>
+            <li>ドイツ</li>
+            <li>イタリア</li>
+            <li>フランス</li>
+            <li>イギリス</li>
+        </ol>
+        <p id="a2">答え：イギリス
+            <img src="./igirisu.jpg" alt="イギリス">
+        </p>　
+        <button id="btn2">答え表示</button>
+      
+    
+
+    </main>
+</body>
+<script>
+    let a2 = document.getElementById("a2");
+    a2.style.display = "none"; 
+    let btn2 = document.getElementById("btn2");
+    btn2.addEventListener("click" ,()=>{
+        a2.style.display = "block";
+    })
+    </script>
+    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <main>
+        <h1>クイズ</h1>
+        <h2>第三問</h2>
+        <p>テリアは何をする犬種でしょう</p>
+        <ol>
+            <li>狩猟犬（狩り）</li>
+            <li>牧羊犬（家畜の世話）</li>
+            <li>家庭犬（一般的なペット）</li>
+            <li>探知犬（においで探知）</li>
+        </ol>
+
+        <p id="a3">答：狩猟犬
+            キツネ、アナグマ、ネズミなどの小型の害獣を狩猟する犬種です
+            <img src="./syuyousuru.jpg" alt="狩猟">
+
+        </p>
+        <button id="btn3">答え表示</button>
+        
+    
+
+    </main>
+</body>
+<script>
+    let a3 = document.getElementById("a3");
+    a3.style.display = "none"; 
+    let btn3 = document.getElementById("btn3");
+    btn3.addEventListener("click" ,()=>{
+        a3.style.display = "block";
+    })
+    </script>
+</html>
+
+
+

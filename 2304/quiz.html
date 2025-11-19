@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>クイズのページ</title>
+    <link rel="stylesheet" href="./site.css">
+</head>
+<body>
+    <main>
+        <h1>クイズ</h1>
+        <h2>第1問</h2>
+        <p>漫画という言葉を最初に用いた人は❓</p>
+        <ol>
+            <li>手塚治虫</li>
+            <li>福沢諭吉</li>
+            <li>葛飾北斎</li>
+        </ol>
+        <p id="a1">答.葛飾北斎</p>
+        <button id="btn1">答え表示</button>
+        <h2>第2問</h2>
+        <p>日本で最も古いとされる漫画はどれか❓</p>
+         <ol>
+            <li>北斎漫画</li>
+            <li>鳥獣人物戯画</li>
+            <li>御伽草子</li>
+         </ol>
+        <p id="a2">答.鳥獣人物戯画</p>
+        <button id="btn2">答え表示</button>
+        <h2>第3問</h2>
+        <p>日本で漫画の神様といわれてるのは誰❓</p>
+         <ol>
+            <li>鳥山明</li>
+            <li>手塚治虫</li>
+            <li>高橋留美子</li>
+         </ol>
+        <p id="a3">答.手塚治虫</p>
+        <button id="btn2">答え表示</button>
+    </main>
+</body>
+<script>
+    let a1 = document.getElementById("a1")
+    a1.style.display = "none";
+    let btn1 =document.getElementById("btn1");
+    btn1.addEventListener("click",()=>{
+        a1.style.display = "block"
+    })
+    let a2 = document.getElementById("a2")
+    a2.style.display = "none";
+    let btn2 =document.getElementById("btn2");
+    btn2.addEventListener("click",()=>{
+        a2.style.display = "block"
+    })
+    let a3 = document.getElementById("a3")
+    a3.style.display = "none";
+    let btn3 =document.getElementById("btn3");
+    btn3.addEventListener("click",()=>{
+        a3.style.display = "block"
+    })
+</script>
+</html>

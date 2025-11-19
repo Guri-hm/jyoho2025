@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+       <link rel="stylesheet" href="site.css">
+    </head>
+    <body>
+        <main>
+            <h1>クイズ</h1>
+            <h2>第一問</h2>
+            <p>2022年サッカーカタールワールドカップ優勝国は？</p>
+            <ol>
+                <li>フランス</li>
+                <li>アルゼンチン</li>
+                <li>スペイン</li>
+                <li>ブラジル</li>
+            </ol>
+            <p id="a1">答：2.アルゼンチン</p>
+            <button id="btn1">答え表示</button>
+            <h2>第二問</h2>
+            <p>サッカー日本代表のホームユニフォームの主な色は？</p>
+            <ol>
+                <li>青</li>
+                <li>白</li>
+                <li>赤</li>
+                <li>緑</li>
+            </ol>
+            <p id="a2">答：1.青</p>
+            <button id="btn2">答え表示</button>
+             <h2>第三問</h2>
+            <p>現在（2025.11.12時点）の日本のFIFAランキングは何位？</p>
+            <ol>
+                <li>13位</li>
+                <li>19位</li>
+                <li>37位</li>
+                <li>53位</li>
+            </ol>
+            <p id="a3">答：2.19位</p>
+            <button id="btn3">答え表示</button>
+        </main>
+        
+    </body>
+    <script>
+        let a1 = document.getElementById("a1")
+        a1.style.display = "none";
+        let btn1 = document.getElementById("btn1")
+        btn1.addEventListener("click",()=>{
+            a1.style.display = "block";
+        })
+        let a2 = document.getElementById("a2")
+        a2.style.display = "none";
+        let btn2 = document.getElementById("btn2")
+        btn2.addEventListener("click",()=>{
+            a2.style.display = "block";
+        })
+        let a3 = document.getElementById("a3")
+        a3.style.display = "none";
+        let btn3 = document.getElementById("btn3")
+        btn3.addEventListener("click",()=>{
+            a3.style.display = "block";
+        })
+        
+        
+    </script>
+</html>

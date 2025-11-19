@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./site.css">
+    </head>
+    <body>
+        <main>
+            <h1>クイズ</h1>
+            <h2>第１問</h2>
+            <p>陸上競技で一番きつい競技は？（個人差があります）</p>
+            <ol>
+                <li>400m</li>
+                <li>400mH</li>
+                <li>800m</li>
+                <li>3000mSC</li>
+            </ol>
+            <p id="a1">答：3000mSC
+                <img src="photo3.jpg" alt="">
+            </p>
+            
+            <button id="btn1">答え表示</button>
+            <h2>第２問</h2>
+            <p>世界陸上2025が行なわれた都市は？</p>
+            <ol>
+                <li>ロンドン</li>
+                <li>東京</li>
+                <li>パリ</li>
+                <li>ベルリン</li>
+            </ol>
+            <p id="a2">答：東京
+                <img src="photo4.jpg" alt="">
+            </p>
+            
+            <button id="btn2">答え表示</button>
+            <h2>第３問</h2>
+            <p>400ｍの日本記録保持者は？</p>
+            <ol>
+                <li>中島</li >
+                <li>佐藤</li>
+                <li>平川</li>
+                <li>吉津</li>
+            </ol>
+            <p id="a3">答：中島
+            
+            </p>
+            <button id="btn3">答え表示</button>
+        </main>
+        
+    </body>add
+    <script>
+        let a1 = document.getElementById("a1");
+        a1.style.display = "none"
+        let btn1 = document.getElementById("btn1");
+        btn1.addEventListener("click",()=>{a1.style.display = "block";})
+       
+        let a2 = document.getElementById("a2");
+        a2.style.display = "none"
+        let btn2 = document.getElementById("btn2");
+        btn2.addEventListener("click",()=>{a2.style.display = "block";})
+
+        let a3 = document.getElementById("a3");
+        a3.style.display = "none"
+        let btn3 = document.getElementById("btn3");
+        btn3.addEventListener("click",()=>{a3.style.display = "block";})
+    </script>
+</html>

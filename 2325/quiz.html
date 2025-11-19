@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>クイズのページ</title>
+    <link rel="stylesheet" href="./site.css">
+    <body>
+        <main>
+             <h1>クイズ</h1>
+             <h2>第一問</h2>
+             <p>カリーの年俸は？</p>
+             <ol>
+                <li>90億</li>
+                <li>80億</li>
+                <li>115億</li>
+             </ol>
+             <img src="OIP (1).webp" alt="写真">
+             <p id="a1">答え：90億</p>
+             <button id="btn1">答え表示</button>
+        </main>
+    </body>
+    <script>
+        let a1 = document.getElementById("a1"); 
+        a1.style.display = "none";
+        let btn1 = document.getElementById("btn1");
+        btn1.addEventListener("click",()=>{
+            a1.style.display = "block";
+        })
+    </script>
+</head>
+</html>
+
+
+<body>
+        <main>
+             <h2>第二問</h2>
+             <p>このバッシュのシグネチャーモデルは？</p>
+             <ol>
+                <li>ザイオン</li>
+                <li>ジョーダン</li>
+                <li>ジャモラント</li>
+             </ol>
+             <img src="ダウンロード.webp" alt="写真">
+             <p id="a2">答え：ジャモラント</p>
+             <button id="btn2">答え表示</button>
+        </main>
+    </body>
+    <script>
+        let a2 = document.getElementById("a2"); 
+        a2.style.display = "none";
+        let btn2 = document.getElementById("btn2");
+        btn2.addEventListener("click",()=>{
+            a2.style.display = "block";
+        })
+    </script>
+</head>
+</html>
+
+<body>
+        <main>
+             <h2>第三問</h2>
+             <p>これは誰</p>
+             <ol>
+                <li>SGA</li>
+                <li>ヤニス</li>
+                <li>レブロン</li>
+             </ol>
+             <img src="OIP.webp" alt="写真">
+             <p id="a3">答え：SGA</p>
+             <button id="btn3">答え表示</button>
+        </main>
+    </body>
+    <script>
+        let a3 = document.getElementById("a3"); 
+        a3.style.display = "none";
+        let btn3 = document.getElementById("btn3");
+        btn3.addEventListener("click",()=>{
+            a3.style.display = "block";
+        })
+    </script>
+</head>
+</html>
