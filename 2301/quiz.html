@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>クイズのページ"></title>
+        <link rel="stilesheet"href="./site.css">
+    </head>
+    <body>
+        <main>
+            <h1>クイズ</h1>
+            <h2>第一問</h2>
+            <p>レモネードはいつ作られた？</p>
+            <o1>
+                <li>古代</li>
+                <li>中世</li>
+                <li>近代</li>
+            </o1>
+            <p id="a1">答：古代</p>
+            <button id="btn1">答え表示</button>
+            <h1>第二問</h1>
+            <p>どこの国発祥？</p>
+            <O2>
+                <li>イタリア</li>
+                <li>フランス</li>
+                <li>エジプト</li>
+            </O2>
+            <p id="a2">答：エジプト</p>
+            <button id="btn2">答え表示</button>
+            
+            <h1>第三問</h1>
+            <p>１９世紀に日本に入ってきたが一番最初に売り出された県はどこ？</p>
+            <O3>
+                <li>広島</li>
+                <li>北海道</li>
+                <li>愛知</li>
+                <li>長崎</li>
+            </O3>
+            <p id="a3">答：長崎</p>
+               ヒント： ペリー来航の時に伝承したみたい☻
+                でも最初のほうは人気がなくてラムネで定着したみたいだよ☻
+                <button id="btn3">答え表示</button>
+            </p>
+
+            
+        </main>
+    </body>
+    <script>
+        let a1=document.getElementById("a1")
+        a1.style.display="none"
+        let btn1=document.getElementById("btn1")
+        btn1.addEventListener("click",()=>{
+            a1.style.display="block";
+
+        })
+        let a2=document.getElementById("a2")
+        a2.style.display="none"
+        let btn2=document.getElementById("btn2");
+        btn2.addEventListener("click",()=>{
+            a2.style.display="block"
+        })
+        let a3=document.getElementById("a3")
+        a3.style.display="none"
+        let btn3=document.getElementById("btn3");
+        btn3.addEventListener("click",()=>{
+            a3.style.display="block"
+        })
+
+    </script>
+</html>

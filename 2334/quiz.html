@@ -1,0 +1,110 @@
+<html>
+    <herd>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./site.css">
+    </herd>
+    <body>
+        <main>
+            <h1>クイズ</h1>
+            <h2>第1問</h2>
+            <p>猫はどこから来たの？？</p>
+            <ol>
+                <li>アフリカ地域</li>
+                <li>中東地域</li>
+                <li>北米地域</li>
+                <li>アジア地域</li>
+            </ol>
+            <p id="a1">答え:4.中東地域</p>
+            <button id="btn1">答え表示</button>
+            <h3>第2問</h3>
+            <p>日本では猫と犬どちらが多く飼われている？？</p>
+            <ol>
+                <li>犬</li>
+                <li>猫</li>
+            </ol>
+            <p id="a2">答え:2.猫</p>       
+            <button id="btn2">答え表示</button>
+            <h4>第3問</h4>
+            <P>猫はウサイン・ボルトより速く走ることができる</P>
+            <ol>
+                <li>〇</li>
+                <li>✕</li>
+            </ol>
+            <p id="a3">答え:1.〇</p>
+            <button id="btn3">答え表示</button>
+            <h4>第4問</h4>
+            <P>猫が温度を感じる部位は？</P>
+            <ol>
+                <li>ひげ</li>
+                <li>鼻</li>
+                <li>舌</li>
+            </ol>
+            <p id="a4">答え:1.ひげ</p>
+            <button id="btn4">答え表示</button>
+            <h5>第5問</h5>
+            <P>猫の平均的な睡眠時間は？？</P>
+            <ol>
+                <li>約8時間</li>
+                <li>約12時間</li>
+                <li>約16時間</li>
+                <li>約20時間</li>
+            </ol>
+            <p id="a5">答え:3.16時間</p>
+            <button id="btn5">答え表示</button>
+            <h6>第6問</h6>
+            <p>猫の髭の役割は？？</p>
+            <ol>
+                <li>食べ物の感触をつかむ</li>
+                <li>方向転換の手助け</li>
+                <li>空気の流れを感じ取る</li>
+                <li>走る速度を測る</li>
+            </ol>
+            <p id="a6">答え:3.空気の流れを感じ取る</p>
+            <button id="btn6">答え表示</button>
+
+ 　     </main>
+    </body>
+    <script>
+        let a1 = document.getElementById("a1")
+        a1.style.display = "none"
+        let btn1 = document.getElementById("btn1");
+        btn1.addEventListener("click",()=>{
+            a1.style.display = "block";
+        })
+        let a2 = document.getElementById("a2")
+        a2.style.display = "none"
+        let btn2 = document.getElementById("btn2");
+        btn2.addEventListener("click",()=>{
+            a2.style.display = "block";
+        })   
+        let a3 = document.getElementById("a3")
+        a3.style.display = "none"
+        let btn3 = document.getElementById("btn3");
+        btn3.addEventListener("click",()=>{
+            a3.style.display = "block";
+
+        })
+        let a4 = document.getElementById("a4")
+        a4.style.display = "none"
+        let btn4 = document.getElementById("btn4");
+        btn4.addEventListener("click",()=>{
+            a4.style.display = "block";
+
+        })
+
+         let a5 = document.getElementById("a5")
+        a5.style.display = "none"
+        let btn5 = document.getElementById("btn5");
+        btn5.addEventListener("click",()=>{
+            a5.style.display = "block";
+        })
+
+         let a6 = document.getElementById("a6")
+        a6.style.display = "none"
+        let btn6 = document.getElementById("btn6");
+        btn6.addEventListener("click",()=>{
+            a6.style.display = "block";
+        })
+        
+            </script>
+</html>                                                 

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./site.css">
+    </head>
+    <body>
+        <main>
+            <h1>クイズ</h1>
+            <h2>第１問</h2>
+            <p>シャインマスカットの発祥地は？</p>
+            <ol>
+                <li>山梨県</li>
+                <li>広島県</li>
+                <li>韓国</li>
+                <li>岡山県</li>
+            </ol>
+            <p id="a1">答：広島県
+                <img src="./photo3.png" alt="">
+            </p>
+            <button id="btn1">答え表示</button>
+
+            <h2>第２問</h2>
+            <p>食べごろの見分け方は？</p>
+            <ol>
+                <li>形</li>
+                <li>色</li>
+                <li>大きさ</li>
+            </ol>
+            <P id="a2">答:色
+                <img src="./photo4.avif" alt="" srcset="">
+            </P>
+            <button id="btn2">答え表示</button>
+        </main>
+    </body>
+    <script>
+        let a1=document.getElementById("a1")
+        a1.style.display="none";
+        let btn1=document.getElementById("btn1");
+        btn1.addEventListener("click",()=>{
+            a1.style.display="block";
+        })
+        let a2=document.getElementById("a2")
+        a2.style.display="none";
+        let btn2=document.getElementById("btn2");
+        btn2.addEventListener("click",()=>{
+            a2.style.display="block";
+        })
+    </script>
+</html>

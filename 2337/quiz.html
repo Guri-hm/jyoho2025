@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./site.css">
+    </head>
+    <body>
+        <main>
+            <h1>クイズ</h1>
+            <h2>第１問</h2>
+            <p>桜の花びらの枚数は？</p>
+            <ol>
+                <li>２枚</li>
+                <li>５枚</li>
+                <li>８枚</li>
+                <li>９枚</li>
+            </ol>    
+            <p id="a1">答え：５枚
+                <img src="./photo3.jpg" alt="hanabira">
+                <br>
+            </p>
+            <button id="btn1">答え表示</button>
+
+            <h2>第２問</h2>
+            <p>桜の花言葉は？</p>
+            <ol>
+                <li>私を忘れないで</li>
+                <li>優雅な女性</li>
+                <li>叶わない恋</li>
+                <li>心休まる家庭</li>
+            </ol>    
+            <p id="a2">答え：優雅な女性
+                <img src="./photo2.jpg" alt="sakura">
+                <br>
+            </p>
+            <button id="btn2">答え表示</button>
+
+            <h2>第３問</h2>
+            <p>次のうち、実際にある桜の呼び名は？</p>
+            <ol>
+                <li>朝桜</li>
+                <li>黒桜</li>
+                <li>花火桜</li>
+                <li>紅桜</li>
+            </ol>    
+            <p id="a3">答え：朝桜
+                <img src="./photo4.jpg" alt="ASAzakura">
+                <br>
+            </p>
+            <button id="btn3">答え表示</button>
+
+        </main>
+    </body>
+    <script>
+        let a1 = document.getElementById("a1");
+        a1.style.display = "none";
+        let btn1 = document.getElementById("btn1");
+        btn1.addEventListener("click",()=>{
+            a1.style.display = "block"
+            a1.style.backgroundColor ="#e9dfe5";
+        })
+        let a2 = document.getElementById("a2");
+        a2.style.display = "none";
+        let btn2 = document.getElementById("btn2");
+        btn2.addEventListener("click",()=>{
+            a2.style.display = "block"
+            a2.style.backgroundColor ="#e9dfe5";
+        })
+        let a3 = document.getElementById("a3");
+        a3.style.display = "none";
+        let btn3 = document.getElementById("btn3");
+        btn3.addEventListener("click",()=>{
+            a3.style.display = "block"
+            a3.style.backgroundColor ="#e9dfe5";
+        })
+    </script>
+</html>      

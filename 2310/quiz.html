@@ -1,0 +1,57 @@
+<html>
+
+
+<head>
+    <title>クイズのページ</title>
+    <link rel="stylesheet" href="site.css">
+
+
+</head>
+
+
+<body>
+
+    <main>
+        <h1>クイズ</h1>
+        <h2>第1問</h2>
+        <p>ヨルシカの有名な曲の一つに「春泥棒」があるがその元ネタはなにか？</p>
+        <ol>
+            <li>春嵐</li>
+            <li>春に現れる泥棒</li>
+            <li>強盗</li>
+
+        </ol>
+        <p id="a1">答：３強盗
+
+            アルバム「盗作」のEPとして収録された「創作」のアルバムの一つ。あくまで強盗の主人公の話の続きである。</p>
+        <button id="btn1">答え表示</button>
+        <h3>第二問</h2>
+            <p>春泥棒のMVの男性は何者か？</p>
+            <ol>
+                <li>強盗</li>
+                <li>小説家</li>
+                <li>盗作の主人公</li>
+            </ol>
+            <p id="a2">答：３盗作の主人公</p>
+            <button id="btn2">答え表示</button>
+
+    </main>
+
+</body>
+<script>
+    let a1 = document.getElementById("a1");
+    a1.style.display = "none";
+    let btn1 = document.getElementById("btn1");
+    btn1.addEventListener("click", () => {
+
+        a1.style.display = "block";
+    })
+    let a2 = document.getElementById("a2");
+    a2.style.display = "none";
+    let btn2 = document.getElementById("btn2");
+    btn2.addEventListener("click", () => {
+        a2.style.display = "block";
+    })
+</script>
+
+</html>

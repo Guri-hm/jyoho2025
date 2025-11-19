@@ -1,0 +1,53 @@
+<html>
+
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./site.css">
+    </head>
+    <body>
+        <main>
+            <h1>クイズ</h1>
+            <h2>第１問</h2>
+            <p>バスケでボールを持ったまま3歩以上歩く反則行為を何という？</p>
+            <ol>
+                <li>イリーガルウォーク</li>
+                <li>トラベリング</li>
+                <li>歩行者天国</li>
+                <li>サンホイジョーアルーク</li>
+            </ol>
+            <p id="a1">答.トラベリング</p>
+            <button id="btn1">答え表示</button>
+            <h2>第二問</h2>
+            <p>次のうち河村勇輝はどれ？</p>
+            <ol>
+                <li><img src="./photo3.png" alt=""></li><li><img src="./photo4.png" alt=""></li>
+                <li><img src="./photo5.png" alt=""></li><li><img src="./photo6.png" alt=""></li>
+
+            </ol>
+            <p id="a2">答.1</p>
+            <button id="btn2">答え表示</button>
+           
+        </main>   
+        
+    </body>
+    <script>
+        let a1 = document.getElementById("a1")
+        a1.style.display="none";
+        let btn1 = document.getElementById("btn1")
+        btn1.addEventListener("click",()=>{
+           a1.style.display = "block";
+    
+        })
+     let a2 = document.getElementById("a2")
+        a2.style.display="none";
+        let btn2 = document.getElementById("btn2")
+        btn2.addEventListener("click",()=>{
+           a2.style.display = "block";
+    
+        })    
+    </script>
+
+
+
+
+</html>

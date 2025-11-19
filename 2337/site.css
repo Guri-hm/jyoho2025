@@ -1,0 +1,16 @@
+ img{
+                width: 300px;
+            }
+            main{
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: rgb(241, 240, 234);
+                border-radius: 2px;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            body{
+                background-color: rgb(228, 200, 197, 0.7);
+            }
+        

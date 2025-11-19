@@ -1,0 +1,69 @@
+<html>
+    <head>
+       <title>クイズのページ</title>
+       <link rel="stylesheet" href="./style.css">
+
+    </head>
+    <body>
+        <main>
+            <h1>クイズ</h1>
+            <h2>第１問</h2>
+            <p>アヒージョで食べられるパンは？</p>
+            <ol>
+                <li>食パン</li>
+                <li>レーズンパン</li>
+                <li>フランスパン</li>
+                <li>メロンパン</li>
+            </ol>
+            <p id="a1">答：フランスパン
+                <img src="./photo 3.jpg" alt="">
+            </p>
+            <button id="btn1">答え表示</button>
+            <h2>第２問</h2>
+            <p>アヒージョで使われる油は？</p>
+            <ol>
+                <li>米油</li>
+                <li>ごま油</li>
+                <li>サラダ油</li>
+                <li>オリーブオイル</li>
+            </ol>
+            <p id="a2">答：オリーブオイル
+                <img src="./photo 4.jpg" alt="">
+            </p>
+            <button id="btn2">答え表示</button>
+            <h2>第３問</h2>
+            <p>アヒージョの発祥地は？</p>
+            <ol>
+                <li>アメリカ</li>
+                <li>ブラジル</li>
+                <li>イギリス</li>
+                <li>スペイン</li>
+            </ol>
+            <p id="a3">答:スペイン
+                <img src="./ohoto 5.jpeg" alt="">
+            </p>
+            <button id="btn3">答えを表示</button>
+        </main>
+    </body>
+    <script>
+        let a1 = document.getElementById("a1");
+        a1.style.display = "none";
+        let btn1 = document.getElementById("btn1");
+        btn1.addEventListener("click",()=>{
+            a1.style.display = "block";
+        })
+        let a2 = document.getElementById("a2");
+        a2.style.display = "none";
+        let btn2 = document.getElementById("btn2");
+        btn2.addEventListener("click",()=>{
+            a2.style.display = "block";
+        })
+        let a3 = document.getElementById("a3");
+        a3.style.display = "none";
+        let btn3 = document.getElementById("btn3");
+        btn3.addEventListener("click",()=>{
+            a3.style.display = "block";
+        })
+    </script>
+
+</html>

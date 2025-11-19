@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./site.css">
+    </head>
+    <body>
+        <main>
+            <h1>クイズ</h1>
+            <h2>第一問</h2>
+            <p>たてていただいたお茶をいただくとき、なんというか</p>
+            <ol>
+
+                <li>粗茶ですが</li>
+                <li>空茶ですが</li>
+                <li>お点前頂戴いたします</li>
+                <li>お点前いただきます</li>
+                <li>何も言わない</li>
+            </ol>
+            <p id="a1">答え：３</p>
+            <button id="btn1">答え表示</button>
+            <h2></h2>
+        </main>
+    </body>
+    <script>
+        let a1 =document.getElementById("a1");
+        a1.style.display="none";
+        btn1.addEventListener("click",()=>{
+        a1.style.display="block";
+        })
+
+    </script>
+    <body>
+        <main>
+            <h1>クイズ</h1>
+            <h2>第2問</h2>
+            <p>お辞儀の種類</p>
+            <ol>
+
+                <li>やあ　よう　へい</li>
+                <li>そん　せん　しん</li>
+                <li>あ　い　う　え　お</li>
+                <li>しん　ぎょう　そう</li>
+                <li>あさ　ひる　よる</li>
+            </ol>
+            <p id="a2">答え：４</p>
+            <button id="btn2">答え表示</button>
+            <h2></h2>
+        </main>
+    </body>
+    <script>
+        let a2 =document.getElementById("a2");
+        a2.style.display="none";
+        btn2.addEventListener("click",()=>{
+        a2.style.display="block";
+        })
+
+    </script>
+</html>

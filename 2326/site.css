@@ -1,0 +1,16 @@
+img{
+            width:300px;
+        }
+        main{
+            width:50%;
+            margin-left:auto;
+            margin-right:auto;
+            background-color:lightcyan;
+            border-radius: 2%;
+            padding-left:20px;
+            padding-right:20px;
+        }
+        body{
+            background-color:black;
+        
+        }

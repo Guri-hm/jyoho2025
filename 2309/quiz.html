@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href=".site.css">
+    </head>
+    <body>
+        <main>
+            <h1>クイズ</h1>
+            <h2>第一問</h2>
+            <p>私が一番好きな色は？</p>
+            <ol>
+                <li>赤</li>
+                <li>青</li>
+                <li>黒</li>
+                <li>白</li>
+            </ol>
+            <p id="a1">答   3:黒</p>
+            <button id="btn1">答え表示</button>
+            <h2>第二問</h2>
+            <p>私が好きな寿司ネタふたつは？</p>
+            <ol>
+                <li>まぐろとたい</li>
+                <li>いくらとたい</li>
+                <li>まぐろといか</li>
+                <li>いくらといか</li>
+            </ol>
+            <p id="a2">答   2:いくらとたい</p>
+            <button id="btn2">答え表示</button>
+            <h2>第三問</h2>
+            <p>私が飼っている動物は？</p>
+            <ol>
+                <li>犬</li>
+                <li>猫</li>
+                <li>ハムスター</li>
+                <li>うさぎ</li>
+            </ol>
+            <p id="a3">答   2:猫</p>
+            <button id="btn3">答え表示</button>
+        </main>
+    </body>
+    <script>
+        let a1 = document.getElementById("a1")
+        a1.style.display = "none";
+        let btn1 =document.getElementById("btn1");
+        btn1.addEventListener("click",()=>{
+            a1.style.display = "block";
+        })
+        let a2 = document.getElementById("a2")
+        a2.style.display = "none";
+        let btn2 =document.getElementById("btn2");
+        btn2.addEventListener("click",()=>{
+            a2.style.display = "block";
+        })
+        let a3 = document.getElementById("a3")
+        a3.style.display = "none";
+        let btn3 =document.getElementById("btn3");
+        btn3.addEventListener("click",()=>{
+            a3.style.display = "block";
+        })
+    </script>
+</html>

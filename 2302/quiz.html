@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./site.css">
+</head>
+<body>
+    <main>
+        <h1>クイズ</h1>
+        <h2>第１問</h2>
+        <p>私がバンドを聞くようになったきっかけのアーティストは？</p>
+        <ol>
+            <li>backnumber</li>
+            <li>Saucy Dog</li>
+            <li>マカロニえんぴつ</li>
+            <li>クリープハイプ</li>
+        </ol>
+        <p id="a1"> 答え：Saucy Dog
+           <img src="photo3.jpeg" alt="">
+        </p>
+        <button id="btn1">答え表示</button>
+
+        <h2>第２問</h2>
+        <p>フェスなどでの盛り上がりの一種で観客同士がが身体をぶつけ合うことを何といわれるか</p>
+        <ol>
+            <li>リフト</li>
+            <li>セトリ</li>
+            <li>モッシュ</li>
+            <li>対バン</li>
+        </ol>
+        <p id="a2">答え：モッシュ</p>
+        </p>
+        <button id="btn2">答え表示</button>
+
+        
+
+
+
+    </main>
+    
+</body>
+<script>
+    let a1 = document.getElementById("a1");
+    a1.style.display = "none";
+    let btn1 = document.getElementById("btn1");
+    btn1.addEventListener("click",()=>{
+        a1.style.display = "block";
+    })
+
+    let a2 = document.getElementById("a2");
+    a2.style.display = "none";
+    let btn2 = document.getElementById("btn2");
+    btn2.addEventListener("click",()=>{
+        a2.style.display = "block";
+    })
+
+</script>
+
+
+
+
+
+
+
+</html>

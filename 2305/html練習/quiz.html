@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./site.css">
+    </head>
+    <body>
+         <main>
+            <h1>クイズ</h1>
+            <h2>第一問</h2>
+            <p>ダニエルパウターが初めて母国であるカナダで講演で歌ったのは何歳の時でしょうか</p>
+            <ol>
+                <li>18歳</li>
+                <li>33歳</li>
+                <li>41歳</li>
+            </ol>
+            <p id="a1">答:33歳
+               <img src="./photo5.jpg" alt="ダニエルパウター">
+            </p>
+            <button id="btn1">答え表示</button>
+
+            <h2>第2問</h2>
+            <p>バレーボールにおいてネット下のラインを踏むのは反則か？</p>
+            <ol>
+                <li>反則</li>
+                <li>反則ではない</li>
+            </ol>
+            <p id="a2">答：反則ではない
+                <img src="./photo6.gif" alt="反則">
+            </p>
+            <button id="btn2">答え表示</button>
+
+            <h2>第３問</h2>
+            <p>バレーボールで試合に勝つために必要な点数は何点？</p>
+            <ol>
+                <li>11点</li>
+                <li>20点</li>
+                <li>25点</li>
+                <li>30点</li>
+            </ol>
+            <p id="a3">答：25点
+                <img src="./photo7.jpg" alt="バレーボールあきまさ">
+            </p>
+        
+            <button id="btn3">答え表示</button>
+
+            <h2>第4問</h2>
+            <p>バレーボールはどこの国発祥のスポーツ？</p>
+            <ol>
+                <li>スペイン</li>
+                <li>アメリカ</li>
+                <li>アラブ首長国連邦</li>
+                <li>トルクメニスタン</li>
+            </ol>
+            <p id="a4">答：アメリカ
+                <img src="./photo8.webp" alt="アメリカ代表">
+            </p>
+            <button id="btn4">答え表示</button>
+         </main>
+    </body>
+    <script>
+        let a1 = document.getElementById("a1");
+        a1.style.display = "none"
+        let btn1 = document.getElementById("btn1");
+        btn1.addEventListener("click",()=>{
+        a1.style.display = "block";})
+
+        let a2 = document.getElementById("a2");
+        a2.style.display = "none"
+        let btn2 = document.getElementById("btn2");
+        btn2.addEventListener("click",()=>{
+        a2.style.display = "block";})
+
+        let a3 = document.getElementById("a3");
+        a3.style.display = "none"
+        let btn3 = document.getElementById("btn3");
+        btn3.addEventListener("click",()=>{
+        a3.style.display = "block";})
+ 
+        let a4 = document.getElementById("a4");
+        a4.style.display = "none"
+        let btn4 = document.getElementById("btn4");
+        btn4.addEventListener("click",()=>{
+        a4.style.display = "block";})
+
+    </script>
+</html>

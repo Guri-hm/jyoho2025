@@ -1,0 +1,11 @@
+ img{width: 300px;}
+            main{width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: aliceblue;
+            border-radius: 20ex;
+            padding-left: 20ex;
+            padding-right: 20ex;
+            padding-bottom: 20ex;
+            padding-top: 20ex;}
+            body{background-color: black;}

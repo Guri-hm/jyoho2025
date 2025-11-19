@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>クイズのページ</title>
+</head>
+
+<body>
+    <main>
+        <h1 style="text-align: center;">クイズ</h1>
+        <div>
+            <h2>第1問</h2>
+            <p>PCの略は何ですか？</p>
+            <ol>
+                <li>パナソニックコンピュータ</li>
+                <li>パーソナルコンピュータ</li>
+                <li>プライベートコンピュータ</li>
+                <li>ポータブルコンピュータ</li>
+            </ol>
+            <p class="answer">答：パーソナルコンピュータ</p>
+            <button class="show_answer">答え表示</button>
+        </div>
+        <div>
+            <h2>第2問</h2>
+            <p>以下の中で、最も新しいOSはどれですか？</p>
+            <ol>
+                <li>Windows 7</li>
+                <li>Windows Me</li>
+                <li>Windows 98</li>
+                <li>Windows XP</li>
+            </ol>
+            <p class="answer">答：Windows XP</p>
+            <button class="show_answer">答え表示</button>   
+        </div>
+        <div>
+            <h2>第3問</h2>
+            <p>HTMLは何の略ですか？</p>
+            <ol>
+                <li>HyperText Machine Language</li>
+                <li>HyperText Markup Language</li>
+                <li>HyperText and link Markup Language</li>
+                <li>HyperText and link Machine Language</li>
+            </ol>
+            <p class="answer">答：HyperText Markup Language（ハイパーテキスト マークアップ ランゲージ）</p>
+            <button class="show_answer">答え表示</button>   
+        </div>
+    </main>
+</body>
+<script>
+    const buttons = document.getElementsByClassName("show_answer");
+    Array.from(buttons).forEach((button, index) => {
+        const answer = button.parentElement.getElementsByClassName("answer")[0];
+        answer.style.display = "none";
+        button.addEventListener("click", () => {
+            answer.style.display = "block";
+        });
+    });
+</script>
+
+</html>
