@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>
+            <h1>第五人格のクイズ</h1>
+            <h2>問１第五人格は2025年で何周年を迎えたでしょう？</h2>
+            <ol>
+                <li>６周年</li>
+                <li>７周年</li>
+                <li>８周年</li>
+                <li>４周年</li>
+            </ol>
+            <p id="a1">答え：7周年</p>
+            <button id="btn1">答えを表示</button>
+            <h3>神出鬼没のクールタイムは何秒でしょう
+                <ol>
+                    <li>100秒</li>
+                    <li>150秒</li>
+                    <li>90秒</li>
+                    <li>30秒</li>           
+                </ol>
+                <p id="a2">答え：150秒</p>
+                <button id="btn2">答えを表示</button>
+            </h3>
+            <h4>2025年11月現在人格ポイントはいくつ振ることができる
+                <ol>
+                    <li>100</li>
+                    <li>110</li>
+                    <li>130</li>
+                    <li>150</li>
+                </ol>
+                <p id="a3">答え：130</p>
+                <button id="btn3">答えを表示</button>
+            </h4>
+        </main>
+        <script>
+            let a1 =document.getElementById("a1");
+            a1.style.display ="none";
+            let btn1 =document.getElementById("btn1")
+            btn1.addEventListener("click",()=>{
+                a1.style.display ="block";
+            })
+           
+        </script>
+        <script>
+            let a2 =document.getElementById("a2");
+            a2.style.display="none";
+            let btn2 =document.getElementById("btn2")
+            btn2.addEventListener("click",()=>{
+                a2.style.display="block";
+            })
+        </script>
+        <script>
+            let a3=document.getElementById("a3")
+            a3.style.display="none";
+            let btn3 =document.getElementById("btn3")
+            btn3.addEventListener("click",()=>{
+                a3.style.display="block";
+            })
+        </script>
+    </body>
+</html>
+ 
