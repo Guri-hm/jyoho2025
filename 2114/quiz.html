@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>
+            <h1>寿司のクイズ</h1>
+            <h2>問1.シャリの語源は？</h2>
+            <ol>
+                <li>「一流の寿司職人」という意味の古語</li>
+                <li>魚が大量に水揚げされた江戸時代の港の名前</li>
+                <li>お釈迦様の骨</li>
+                <li>シャリがシャリシャリしているから</li>
+                
+            </ol>
+            <p id="a1">答え：お釈迦様の骨</p>
+            <button id="btn1">答え表示</button>
+            <h3>問2.回転ずしは英語で？</h3>
+            <ol>
+                <li>サークルスシ</li>
+                <li>コンベヤーベルトスシ</li>
+                <li>ロータリースシ</li>
+                <li>カイテンズシ</li>
+            </ol>
+            <p id="a2">答え：コンベヤーベルトスシ</p>
+            <button id="btn2">答え表示</button>
+            <h4>問3.寿司用語で「ツメ」とはなんのことでしょうか？</h4>
+            <ol>
+                <li>歯が鋭い魚の総称</li>
+                <li>アナゴのタレ</li>
+                <li>指の爪</li>
+                <li>茶碗蒸し用のスプーン</li>
+                <p id="a3">答え：アナゴのタレ</p>
+                <button id="btn3">答え表示</button>
+            </ol>
+        </main>
+        <script>
+            let a1 = document.getElementById("a1")
+            a1.style.display = "none";
+            let btn1 = document.getElementById("btn1");
+            btn1.addEventListener("click",()=>{
+                a1.style.display = "block";
+            })
+            let a2 = document.getElementById("a2")
+            a2.style.display = "none";
+            let btn2 = document.getElementById("btn2");
+            btn2.addEventListener("click",()=>{
+                a2.style.display = "block";
+            })
+            let a3 = document.getElementById("a3")
+            a3.style.display = "none";
+            let btn3 = document.getElementById("btn3");
+            btn3.addEventListener("click",()=>{
+                a3.style.display = "block";
+            })
+        </script>
+    </body>
+</html>

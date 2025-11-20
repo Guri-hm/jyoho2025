@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>
+            <h1>セキセイインコのクイズ</h1>
+            <h2>問1　セキセイインコの種類は何種類ほどある？</h2>
+            <ol>
+                <li>１０００種類</li>
+                <li>２５００種類</li>
+                <li>３６００種類</li>
+                <li>５０００種類</li>
+            </ol>
+            <p id="a1">答え：５０００種類</p>
+            <button id="btn1">答え表示</button>
+        </main>
+        <script>
+           let a1=document.getElementById("a1");
+           a1.style.display="none";
+           let btn1=document.getElementById("btn1");
+           btn1.addEventListener("click",()=>{
+           a1.style.display="block";
+           })
+        </script>
+        <main>
+            <h3>問2　世界ギネス記録のセキセイインコの寿命は？</h3>
+            <ol>
+                <li>１０年</li>
+                <li>２０年</li>
+                <li>３０年</li>
+                <li>４０年</li>
+            </ol>
+            <p id="a2">答え：３０年
+            </p>
+            <button id="btn2">答え表示</button>
+        </main>
+        <script>
+           let a2=document.getElementById("a2");
+           a2.style.display="none";
+           let btn2=document.getElementById("btn2");
+           btn2.addEventListener("click",()=>{
+           a2.style.display="block";
+           })
+        </script>
+        <main>
+            <h4>問3　セキセイインコを漢字で書くと？</h4>
+            <ol>
+                <li>脊生鸚哥</li>
+                <li>背黄青鸚哥</li>
+                <li>迫気声鸚哥</li>
+                <li>積声鸚哥</li>
+            </ol>
+            <p id="a3">答え：背黄青鸚哥
+            </p>
+            <button id="btn3">答え表示</button>
+        </main>
+        <script>
+           let a3=document.getElementById("a3");
+           a3.style.display="none";
+           let btn3=document.getElementById("btn3");
+           btn3.addEventListener("click",()=>{
+           a3.style.display="block";
+           })
+        </script>
+        <main>
+            <h5>問4　セキセイインコの中で人の言葉を真似する(覚える)確率が高いのは次のうちどれ？</h4>
+            <ol>
+                <li>若いオス</li>
+                <li>若いメス</li>
+                <li>年を取ったオス</li>
+                <li>年を取ったメス</li>
+            </ol>
+            <p id="a4">答え：若いオス
+            </p>
+            <button id="btn4">答え表示</button>
+        </main>
+        <script>
+           let a4=document.getElementById("a4");
+           a4.style.display="none";
+           let btn4=document.getElementById("btn4");
+           btn4.addEventListener("click",()=>{
+           a4.style.display="block";
+           })
+        </script>
+    </body>
+</html>

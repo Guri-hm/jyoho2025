@@ -1,0 +1,16 @@
+ img{
+                width: 300px;
+            }
+            main{
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 30px;
+                border-radius: 2%;
+                background-color: #e6e6fa;
+            }
+            body{
+                background-color: #e0ffff;
+            }

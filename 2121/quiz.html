@@ -1,0 +1,68 @@
+<html>
+    <head>
+        
+        <title>クイズのページ</title>
+        ＜<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <main>
+            <h1>Aviciiのクイズ</h1>
+            <h2>問１．一番Youtubeで視聴回数が多い曲は？</h2>
+            <ol>
+                <li>Lonely　together</li>
+                <li>Waiting for love</li>
+                <li>The nights</li>
+                <li>Wake me up</li>
+            </ol>
+            <p id="a1">答：Wake me up</p>
+            <button id="btn1">答え表示</button>
+        </main>
+        <script>
+            let a1 = document.getElementById("a1")
+            a1.style.display = "none";
+            let btn1 = document.getElementById("btn1")
+            btn1.addEventListener("click",()=>{
+                a1.style.display="block"
+         })
+        </script>
+         <main>
+            <h3>問１．音楽活動をいつ始めた？</h3>
+            <ol>
+                <li>１６歳</li>
+                <li>１８歳</li>
+                <li>２０歳</li>
+                <li>２２歳</li>
+            </ol>
+            <p id="a2">答：16歳</p>
+            <button id="btn2">答え表示</button>
+        </main>
+        <script>
+            let a2= document.getElementById("a2")
+            a2.style.display = "none";
+            let btn2 = document.getElementById("btn2")
+            btn2.addEventListener("click",()=>{
+                a2.style.display="block"
+         })
+        </script>
+        <main>
+            <h4>問１．初めて賞をとった曲は？</h4>
+            <ol>
+                <li>Dear Boy</li>
+                <li>Levels</li>
+                <li>without you</li>
+                <li>Hey Brother</li>
+            </ol>
+            <p id="a3">答：Levels</p>
+            <button id="btn3">答え表示</button>
+        </main>
+        <script>
+            let a3 = document.getElementById("a3")
+            a3.style.display = "none";
+            let btn3 = document.getElementById("btn3")
+            btn3.addEventListener("click",()=>{
+                a3.style.display="block"
+         })
+        </script>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>
+            <h1>CDのクイズ</h1>
+            <h2>問1.CDの正式名は？</h2>
+            <ol>
+                <li>シートディスク </li>
+                <li>シリウスディスク</li>
+                <li>スンスンディスク</li>
+                <li>コンパクトディスク</li>
+            </ol>
+            <p id="a1">答：コンパクトディスク</p>
+            <button id="btn1">答え表示</button>
+        </main>
+        <script>
+            let a1 = document.getElementById("a1")
+            a1.style.display="none";
+            let btn1 = document.getElementById("btn1");
+            btn1.addEventListener("click",()=>{
+               a1.style.display = "block";
+            })
+            
+        </script>
+        
+        <main>
+            <h3>問2.CDは何グラム？</h3>
+            <ol>
+                <li>15g</li>
+                <li>14g</li>
+                <li>17g</li>
+                <li>16g</li>
+            </ol>
+            <p id="a2">答:15g</p>
+            <button id="btn2">答え表示</button>
+        </main>
+        <script>
+            let a2 = document.getElementById("a2")
+            a2.style.display="none";
+            let btn2 = document.getElementById("btn2")
+            btn2.addEventListener("click",()=>{
+              a2.style.display="block";
+            })
+        </script>
+
+        <main>
+            <h4>問3.one ok lockの最新のアルバムが発売された日付はいつでしょう？</h4>
+            <ol>
+                <li>2025年2月21日</li>
+                <li>2025年1月1日</li>
+                <li>2025年3月13日</li>
+                <li>2025年1月26日</li>
+            </ol>
+            <p id="a3">答:2025年2月21日</p>
+            <button id="btn3">答え表示</button>
+        </main>
+        <script>
+            let a3 = document.getElementById("a3")
+            a3.style.display="none";
+            let btn3 = document.getElementById("btn3")
+            btn3.addEventListener("click",()=>{
+              a3.style.display="block";  
+            })
+        </script>
+        
+
+    </body>
+</html>
