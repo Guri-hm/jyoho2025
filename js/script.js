@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('submissions-root');
   if (!root) return;
 
-  // If the page is opened via file://, fetch() will almost always fail.
-  // Show a friendly instruction so the user knows to run a local server or use GitHub Pages.
   if (location.protocol === 'file:') {
     root.innerHTML = `
       <div class="error">
@@ -17,14 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  // Try to fetch roster.json first (recommended). If that fails, fall back to roster.md for compatibility.
   function renderFromIds(ids) {
     if (!Array.isArray(ids) || ids.length === 0) {
       root.innerHTML = '<em>名簿が空です。</em>';
       return;
     }
 
-    // group by first two digits (e.g. 21 -> 2年1組)
     const groups = {};
     for (const id of ids) {
       const s = String(id).trim();
@@ -63,7 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Primary: roster.json
   fetch('./roster.json')
     .then(res => {
       if (!res.ok) throw new Error(`roster.json: ${res.status} ${res.statusText}`);
@@ -73,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
       renderFromIds(json);
     })
     .catch(errJson => {
-      // fallback: try roster.md (text)
       console.warn('roster.json failed, falling back to roster.md:', errJson);
       fetch('./roster.md')
         .then(res => {
