@@ -5,7 +5,6 @@
     --accent: #3b82f6;
 }
 
-/* Page layout */
 body {
     background: var(--bg);
     color: #0b1220;
@@ -23,7 +22,6 @@ main {
 h1 { font-size: 1.25rem; text-align: center; margin: 0 0 8px 0; }
 h2 { font-size: 1rem; text-align: center; margin: 0 0 6px 0; }
 
-/* Game boards */
 .boards {
     position: relative;
     display: flex;
@@ -49,7 +47,6 @@ h2 { font-size: 1rem; text-align: center; margin: 0 0 6px 0; }
 
 .controls { display: flex; justify-content: center; gap: 8px; margin-top: 12px; }
 
-/* Submissions UI - modern card/grid */
 .submissions-container{
     display: flex;
     gap: 20px;
@@ -88,5 +85,4 @@ h2 { font-size: 1rem; text-align: center; margin: 0 0 6px 0; }
 @media (max-width: 720px){ .student-grid{ grid-template-columns: repeat(4,1fr); } }
 @media (max-width: 420px){ .student-grid{ grid-template-columns: repeat(3,1fr); } .class-block{ padding:10px } }
 
-/* small utilities */
 .error{ color: var(--muted); background: #fff; padding: 10px; border-radius: 8px; border: 1px solid rgba(0,0,0,0.04); }
