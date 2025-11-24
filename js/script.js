@@ -1,4 +1,3 @@
-// ...existing code...
 document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('submissions-root');
   if (!root) return;
