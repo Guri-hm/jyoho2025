@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>クイズのページ</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <main>
+            <h1>バドミントンのクイズ</h1>
+            <h2>問１.バドミントンのシングルスのコートの広さは？</h2>
+            <ol>
+                <li>縦13.4横5.18</li>
+                <li>縦13.4横6.1</li>
+                <li>縦12.8横5.18</li>
+                <li>縦12.8横6.1</li>
+            </ol>
+            <p id="a1">答：縦13.4横5.18</p>
+             <button id="btn1">答え表示</button>
+             <h2>問２.バドミントンの名前の由来は？</h2>
+             <ol>
+                <li>人の名前</li>
+                <li>場所の名前</li>
+                <li>ギリシャ語</li>
+                <li>神</li>
+            
+                
+             </ol>
+             <p id="a2">答：場所の名前</p>
+                <button id="btn2">答え表示</button>
+
+              <h2>問３.バドミントンはいつ始まった？</h2>
+             <ol>
+                <li>1920年</li>
+                <li>1695年</li>
+                <li>1820年</li>
+                <li>1750年</li>
+            
+                
+             </ol>
+             <p id="a3">答：1820年</p>
+                <button id="btn3">答え表示</button>
+             
+            
+        </main>
+        <script>
+             let a1 = document.getElementById("a1");
+            a1.style.display = "none";
+            let btn1 = document.getElementById("btn1");
+            btn1.addEventListener("click",()=>{
+                a1.style.display = "block";
+            })
+              let a2 = document.getElementById("a2");
+            a2.style.display = "none";
+            let btn2 = document.getElementById("btn2");
+            btn2.addEventListener("click",()=>{
+                a2.style.display = "block";
+            })
+            
+             let a3 = document.getElementById("a3");
+            a3.style.display = "none";
+            let btn3 = document.getElementById("btn3");
+            btn3.addEventListener("click",()=>{
+                a3.style.display = "block";
+            })
+        </script>
+    </body>
+</html>
